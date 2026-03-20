@@ -25,7 +25,7 @@ function App() {
         </motion.h1>
 
         <p className="text-lg md:text-2xl text-gray-300 mb-6">
-          Future Software Engineer | Java + DSA
+          Aspiring Software Engineer | Java + DSA | Building Scalable Web Applications
         </p>
 
         <a 
@@ -44,10 +44,36 @@ function App() {
         <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           About Me
         </h2>
-        <p className="text-gray-300">
-          I am a Computer Science student focused on Java and Data Structures & Algorithms.
-          I enjoy solving problems and building efficient solutions.
+
+        <p className="text-gray-300 leading-relaxed">
+          I am a Computer Science student passionate about building efficient and scalable software solutions. 
+          Currently focused on Java, Data Structures & Algorithms, and modern web development.
+          <br /><br />
+          I enjoy solving complex problems, learning new technologies, and continuously improving my technical skills 
+          to prepare for real-world software engineering roles.
         </p>
+      </section>
+
+      {/* WHY HIRE ME */}
+      <section className="py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Why Hire Me
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+          {[
+            "Strong foundation in Data Structures & Algorithms",
+            "Hands-on experience with real-world projects",
+            "Quick learner and adaptable to new technologies",
+            "Focused on writing clean and efficient code"
+          ].map((item, i) => (
+            <div key={i} className="bg-gray-800/60 backdrop-blur-lg border border-gray-700 p-6 rounded-xl">
+              {item}
+            </div>
+          ))}
+
+        </div>
       </section>
 
       {/* SKILLS */}
@@ -83,16 +109,22 @@ function App() {
 
           <div className="bg-gray-800/60 backdrop-blur-lg border border-gray-700 p-6 rounded-xl">
             <h3 className="font-semibold mb-2">Java Banking System</h3>
-            <p className="text-gray-300 text-sm">
-              Console-based banking system with account and transaction features.
-            </p>
+
+            <ul className="text-gray-300 text-sm list-disc pl-5">
+              <li>Implemented account creation and transaction system</li>
+              <li>Designed deposit and withdrawal functionalities</li>
+              <li>Applied Object-Oriented Programming concepts</li>
+            </ul>
           </div>
 
           <div className="bg-gray-800/60 backdrop-blur-lg border border-gray-700 p-6 rounded-xl">
             <h3 className="font-semibold mb-2">Portfolio Website</h3>
-            <p className="text-gray-300 text-sm">
-              Modern portfolio built using React and Tailwind CSS.
-            </p>
+
+            <ul className="text-gray-300 text-sm list-disc pl-5">
+              <li>Built responsive UI using React and Tailwind</li>
+              <li>Implemented modern UI with animations</li>
+              <li>Deployed using Vercel</li>
+            </ul>
           </div>
 
         </div>
@@ -112,13 +144,13 @@ function App() {
             </h3>
 
             <p className="text-gray-300 mb-2">
-              AICTE-backed internship focused on cybersecurity fundamentals.
+              AICTE-backed internship focused on cybersecurity fundamentals and real-world applications.
             </p>
 
             <ul className="text-gray-300 text-sm list-disc pl-5">
               <li>Learned cybersecurity concepts and threat analysis</li>
-              <li>Worked on real-world scenarios</li>
-              <li>Explored secure networking techniques</li>
+              <li>Worked on practical labs and real-world scenarios</li>
+              <li>Explored secure networking and defense strategies</li>
             </ul>
 
             <p className="text-sm text-gray-400 mt-3">
@@ -147,8 +179,8 @@ function App() {
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
           {[
-            {title:"Ethical Hacking (NPTEL)", id:"15lhJUcIgf91w3MFNsNqDuexxqYCX4EEU"},
-            {title:"Cryptography & Network Security", id:"1F_JiF6L6jsnNm7AWCyGap4sfrnYwnRRn"},
+            {title:"Ethical Hacking (NPTEL - IIT Kharagpur)", id:"15lhJUcIgf91w3MFNsNqDuexxqYCX4EEU"},
+            {title:"Cryptography & Network Security (NPTEL)", id:"1F_JiF6L6jsnNm7AWCyGap4sfrnYwnRRn"},
             {title:"TCS iON Career Edge – Young Professional", id:"1bKKGrBf8RnBUUAffdDCDHf-khMLIM5IP"},
             {title:"Cyber Security & Ethical Hacking (BECIL)", id:"13IqS927QNisJ6v0XPBPWJwwiH5RQm1Ts"},
             {title:"Cybersecurity Essentials (Cisco)", id:"1zvHReaAB5McOmL93geFt3W-KKLDLczQo"}
@@ -160,7 +192,7 @@ function App() {
               className="bg-gray-800/60 backdrop-blur-lg border border-gray-700 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition"
             >
               <h3 className="text-lg font-semibold">{cert.title}</h3>
-              <p className="text-sm text-gray-400 mt-2">Click to view certificate</p>
+              <p className="text-sm text-gray-400 mt-2">View Certificate</p>
             </a>
           ))}
 
@@ -175,7 +207,7 @@ function App() {
 
         <div className="flex justify-center gap-6 text-3xl">
 
-          <a href="ayushsahurajmarg@gmail.com" className="hover:text-blue-400"><FaEnvelope /></a>
+          <a href="mailto:ayushsahurajmarg@gmail.com" className="hover:text-blue-400"><FaEnvelope /></a>
           <a href="https://github.com/Ayush-7649" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/ayushsahu28/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaLinkedin /></a>
           <a href="https://x.com/Ayushsahu7649" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>
